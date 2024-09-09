@@ -14,6 +14,6 @@ public class BallTransform : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.localScale += scaleChange;
+        transform.localScale += (scaleChange * Time.deltaTime);
     }
 }
